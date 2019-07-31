@@ -1,0 +1,56 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>萧余的Vue.js框架</title>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>-->
+<!--    <script type="text/javascript">-->
+<!--    window.onload = function() {-->
+<!--    app = new Vue({-->
+<!--        el:'#msgDiv',-->
+<!--        data:{-->
+<!--          sex: 0-->
+<!--        }-->
+<!--     });   //实例化MVVM的管理对象-->
+<!--    }-->
+<!--    </script>-->
+<!--    </head>-->
+<!-- <body>-->
+<!--<div id="msgDiv">-->
+<!--    <p>请输入性别：<input type="number" v-model="sex"></p>-->
+<!--    <p v-if="sex=1 " >我是一个纯爷们!</p>-->
+<!--    <p v-else-if= "sex=0 " >看起来你好象是一个妹纸!</p>-->
+<!--    <p v-else>估计你是一个gay吧！</p>-->
+<!--</div>-->
+<!--</body>-->
+<!--</html>-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>萧余的Vue.js框架</title>
+    <meta charset="UTF-8">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script type="text/javascript">
+        window.onload = function() {
+            app = new Vue({
+                el:'#msgDiv',
+                data:{
+                    flag : true
+                }
+            });   //实例化MVVM的管理对象
+        }
+    </script>
+</head>
+<body>
+<div id="msgDiv">
+ {{flag ? '回答正确，不杀你' : '回答错误，你已经死了'}}
+</div>
+</body>
+</html>
+
+
+
